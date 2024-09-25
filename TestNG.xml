@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="None" thread-count="None">
+    <test name="['Test']">
+        <classes>
+            <class name='org.example'>
+                <methods>
+                    <include name='PassRun'/>
+                    <include name='PassTitleRun'/>
+                    <include name='Failrun'/>
+                    <include name='FailElementrun'/>
+                    <include name='FailURLRun'/>
+                    <include name='SkipRun'/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
