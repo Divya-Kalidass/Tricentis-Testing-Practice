@@ -14,7 +14,7 @@ public class DataDriven {
 
     @DataProvider(name="testdata")
     public Object[][] testDataExample(){
-        ExtractData configuration = new ExtractData("C:\\Users\\dk115455\\OneDrive - bahwancybertek.com\\Desktop\\tricentis-data.xlsx");
+        ExtractData configuration = new ExtractData("./tricentis-data.xlsx");
         int rows = configuration.getRowCount(0);
         Object[][]data_credentials = new Object[rows][6];
 
