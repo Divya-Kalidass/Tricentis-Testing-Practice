@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" parallel="None" thread-count="None">
+<suite name="Suite" parallel="None" thread-count="0">
     <test name="['Test']">
         <classes>
-            <class name='org.example'>
+            <class name='org.example.TestRunnerClass'>
                 <methods>
                     <include name='PassRun'/>
                     <include name='PassTitleRun'/>

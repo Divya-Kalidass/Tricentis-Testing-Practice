@@ -2,9 +2,7 @@ package org.example;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.SkipException;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -33,13 +31,13 @@ public class TestRunnerClass {
 //        }
 //        ProductData.enterData();
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class, priority = 1)
-    public void PassRun(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC1-Sample_Test_Case_1(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
         ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
 
         Thread.sleep(5000);
     }
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class,priority = 2)
-    public void PassTitleRun(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC2-Sample_Test_Case_2(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
        // ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
 //        Assert.assertEquals(driver.getTitle(),"Enter Product Data");
 //        driver.get("");
@@ -48,13 +46,13 @@ public class TestRunnerClass {
         Thread.sleep(5000);
     }
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class,priority = 3)
-    public void Failrun(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC3-Sample_Test_Case_3(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
         //ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
         Assert.assertEquals(driver.getTitle(),"Enter Product Data");
         Thread.sleep(5000);
     }
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class,priority = 4)
-    public void FailElementrun(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC4-Sample_Test_Case_4(String url, String startdate, String insurancesum, String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
         //ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
        // Assert.assertEquals(driver.findElement(By.id("legalDefenseInsurance")));
         try {
@@ -66,13 +64,13 @@ public class TestRunnerClass {
         Thread.sleep(5000);
     }
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class,priority = 5)
-    public void FailURLRun(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC5-Sample_Test_Case_5(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
         //ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
         Assert.assertEquals(driver.getCurrentUrl(),"https://sampleapp.tricentis.com/101/app.php#");
         Thread.sleep(5000);
     }
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class,priority = 6)
-    public void SkipRun(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC6-Sample_Test_Case_6(String url, String startdate, String insurancesum, String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
         // ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
 //        throw new SkipException("Skip test");
         //Thread.sleep(5000);
