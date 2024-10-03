@@ -31,13 +31,13 @@ public class TestRunnerClass {
 //        }
 //        ProductData.enterData();
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class, priority = 1)
-    public void TC1-Sample_Test_Case_1(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC1_Sample_Test_Case_1(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
         ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
 
         Thread.sleep(5000);
     }
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class,priority = 2)
-    public void TC2-Sample_Test_Case_2(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC2_Sample_Test_Case_2(String url, String startdate, String insurancesum, String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
        // ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
 //        Assert.assertEquals(driver.getTitle(),"Enter Product Data");
 //        driver.get("");
@@ -46,13 +46,13 @@ public class TestRunnerClass {
         Thread.sleep(5000);
     }
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class,priority = 3)
-    public void TC3-Sample_Test_Case_3(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC3_Sample_Test_Case_3(String url, String startdate, String insurancesum, String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
         //ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
         Assert.assertEquals(driver.getTitle(),"Enter Product Data");
         Thread.sleep(5000);
     }
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class,priority = 4)
-    public void TC4-Sample_Test_Case_4(String url, String startdate, String insurancesum, String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC4_Sample_Test_Case_4(String url, String startdate, String insurancesum, String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
         //ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
        // Assert.assertEquals(driver.findElement(By.id("legalDefenseInsurance")));
         try {
@@ -64,13 +64,13 @@ public class TestRunnerClass {
         Thread.sleep(5000);
     }
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class,priority = 5)
-    public void TC5-Sample_Test_Case_5(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC5_Sample_Test_Case_5(String url,String startdate, String insurancesum,String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
         //ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
         Assert.assertEquals(driver.getCurrentUrl(),"https://sampleapp.tricentis.com/101/app.php#");
         Thread.sleep(5000);
     }
     @Test(dataProvider="testdata", dataProviderClass = DataDriven.class,priority = 6)
-    public void TC6-Sample_Test_Case_6(String url, String startdate, String insurancesum, String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
+    public void TC6_Sample_Test_Case_6(String url, String startdate, String insurancesum, String mertirating, String damageinsurance, String curtesycar) throws InterruptedException {
         // ProductData.enterData(url,startdate, insurancesum, mertirating,damageinsurance,curtesycar);
 //        throw new SkipException("Skip test");
         //Thread.sleep(5000);
