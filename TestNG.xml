@@ -6,8 +6,8 @@
                 <methods>
                     <include name='PassRun'/>
                     <include name='PassTitleRun'/>
-                    <include name='FailElementrun'/>
-                    <include name='FailURLRun'/>
+                    <include name='Failrun'/>
+                    <include name='SkipRun'/>
                 </methods>
             </class>
         </classes>
