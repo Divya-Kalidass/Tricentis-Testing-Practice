@@ -6,6 +6,7 @@
                 <methods>
                     <include name='TC2_Sample_Test_Case_2'/>
                     <include name='TC3_Sample_Test_Case_3'/>
+                    <include name='TC4_Sample_Test_Case_4'/>
                 </methods>
             </class>
         </classes>
