@@ -4,7 +4,8 @@
         <classes>
             <class name='org.example'>
                 <methods>
-                    <include name='TC3_Sample_Test_Case_3'/>
+                    <include name='TC4_Sample_Test_Case_4'/>
+                    <include name='TC5_Sample_Test_Case_5'/>
                 </methods>
             </class>
         </classes>
